@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import com.jfoenix.validation.ValidationFacade?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.layout.*?>
+
+
+
+<GridPane alignment="TOP_LEFT" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.112" fx:controller="sample.Controller">
+
+   <JFXTextField promptText="Inside Elevator" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.columnSpan="3" prefWidth="200"/>
+   <StackPane fx:id="root3" xmlns:fx="http://javafx.com/fxml/1"
+              xmlns="http://javafx.com/javafx/2.2" GridPane.columnIndex="4" GridPane.rowIndex="0" GridPane.columnSpan="10" maxWidth="300">
+      <HBox spacing="100" maxWidth="300" >
+         <VBox >
+            <ValidationFacade>
+               <control>
+                  <JFXComboBox fx:id="ElevatorS"  prefWidth="130"
+                               promptText="Elevator 1" visibleRowCount="5">
+                     <items>
+                        <FXCollections fx:factory="observableArrayList">
+                           <Label>
+                              Elevator 1
+                           </Label>
+                           <Label>
+                              Elevator 2
+                           </Label>
+                           <Label>
+                              Elevator 3
+                           </Label>
+                           <Label>
+                              Elevator 4
+                           </Label>
+                           <Label>
+                              Elevator 5
+                           </Label>
+                        </FXCollections>
+                     </items>
+                  </JFXComboBox>
+               </control>
+
+            </ValidationFacade>
+         </VBox>
+      </HBox>
+
+   </StackPane>
+
+   <JFXButton fx:id="floor20" prefWidth="60" prefHeight="30"  buttonType="RAISED" text="20" GridPane.columnIndex="1" GridPane.rowIndex="1"
+              style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:10px;"/>
+<JFXButton fx:id="floor19" prefWidth="60" prefHeight="30" buttonType="RAISED" text="19" GridPane.columnIndex="2" GridPane.rowIndex="1"
+           style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:10px;"/>
+<JFXButton fx:id="floor18" prefWidth="60" prefHeight="30" buttonType="RAISED" text="18" GridPane.columnIndex="3" GridPane.rowIndex="1"
+           style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:10px;"/>
+<JFXButton fx:id="floor17" prefWidth="60" prefHeight="30" buttonType="RAISED" text="17" GridPane.columnIndex="4" GridPane.rowIndex="1"
+           style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:10px;"/>
+<JFXButton fx:id="floor16" prefWidth="60" prefHeight="30" buttonType="RAISED" text="16" GridPane.columnIndex="5" GridPane.rowIndex="1"
+           style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:10px;"/>
+<JFXButton fx:id="floor11" prefWidth="60" prefHeight="30" buttonType="RAISED" text="11" GridPane.columnIndex="1" GridPane.rowIndex="2"
+           style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:10px;"/>
+<JFXButton fx:id="floor12" prefWidth="60" prefHeight="30" buttonType="RAISED" text="12" GridPane.columnIndex="2" GridPane.rowIndex="2"
+           style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:10px;"/>
+<JFXButton fx:id="floor13" prefWidth="60" prefHeight="30" buttonType="RAISED" text="13" GridPane.columnIndex="3" GridPane.rowIndex="2"
+           style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:10px;"/>
+<JFXButton fx:id="floor14" prefWidth="60" prefHeight="30" buttonType="RAISED" text="14" GridPane.columnIndex="4" GridPane.rowIndex="2"
+           style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:10px;"/>
+<JFXButton fx:id="floor15" prefWidth="60" prefHeight="30" buttonType="RAISED" text="15" GridPane.columnIndex="5" GridPane.rowIndex="2"
+           style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:10px;"/>
+<JFXButton fx:id="floor10" prefWidth="60" prefHeight="30" buttonType="RAISED" text="10" GridPane.columnIndex="1" GridPane.rowIndex="3"
+           style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:10px;"/>
+<JFXButton fx:id="floor9" prefWidth="60" prefHeight="30" buttonType="RAISED" text="9" GridPane.columnIndex="2" GridPane.rowIndex="3"
+           style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:10px;"/>
+<JFXButton fx:id="floor8" prefWidth="60" prefHeight="30" buttonType="RAISED" text="8" GridPane.columnIndex="3" GridPane.rowIndex="3"
+           style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:10px;"/>
+<JFXButton fx:id="floor7" prefWidth="60" prefHeight="30" buttonType="RAISED" text="7" GridPane.columnIndex="4" GridPane.rowIndex="3"
+           style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:10px;"/>
+<JFXButton fx:id="floor6" prefWidth="60" prefHeight="30" buttonType="RAISED" text="6" GridPane.columnIndex="5" GridPane.rowIndex="3"
+           style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:10px;"/>
+<JFXButton fx:id="floor1" prefWidth="60" prefHeight="30" buttonType="RAISED" text="1" GridPane.columnIndex="1" GridPane.rowIndex="4"
+           style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:10px;"/>
+<JFXButton fx:id="floor2" prefWidth="60" prefHeight="30" buttonType="RAISED" text="2" GridPane.columnIndex="2" GridPane.rowIndex="4"
+           style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:10px;"/>
+<JFXButton fx:id="floor3" prefWidth="60" prefHeight="30" buttonType="RAISED" text="3" GridPane.columnIndex="3" GridPane.rowIndex="4"
+           style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:10px;"/>
+<JFXButton fx:id="floor4" prefWidth="60" prefHeight="30" buttonType="RAISED" text="4" GridPane.columnIndex="4" GridPane.rowIndex="4"
+           style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:10px;"/>
+<JFXButton fx:id="floor5" prefWidth="60" prefHeight="30" buttonType="RAISED" text="5" GridPane.columnIndex="5" GridPane.rowIndex="4"
+           style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:10px;"/>
+   <JFXProgressBar fx:id="progress1"  progress="100" GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.columnSpan="9" maxWidth="350"/>
+
+
+   <JFXTextField promptText="Outside Elevator" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="6" GridPane.columnSpan="3" prefWidth="200"/>
+   <StackPane fx:id="root2" xmlns:fx="http://javafx.com/fxml/1"
+              xmlns="http://javafx.com/javafx/2.2" GridPane.columnIndex="4" GridPane.rowIndex="6" GridPane.columnSpan="10" maxWidth="300">
+      <HBox spacing="100" maxWidth="300" maxHeight="300" >
+         <VBox spacing="20" >
+            <ValidationFacade>
+               <control>
+                  <JFXComboBox fx:id="floorList" prefWidth="130"
+                               promptText="Floor 1" visibleRowCount="5">
+                     <items>
+                        <FXCollections fx:factory="observableArrayList">
+                           <Label>
+                              Floor 1
+                           </Label>
+                           <Label>
+                              Floor 2
+                           </Label>
+                           <Label>
+                              Floor 3
+                           </Label>
+                           <Label>
+                              Floor 4
+                           </Label>
+                           <Label>
+                              Floor 5
+                           </Label>
+                           <Label>
+                              Floor 6
+                           </Label>
+                           <Label>
+                              Floor 7
+                           </Label>
+                           <Label>
+                              Floor 8
+                           </Label>
+                           <Label>
+                              Floor 9
+                           </Label>
+                           <Label>
+                              Floor 10
+                           </Label>
+                           <Label>
+                              Floor 11
+                           </Label>
+                           <Label>
+                              Floor 12
+                           </Label>
+                           <Label>
+                              Floor 13
+                           </Label>
+                           <Label>
+                              Floor 14
+                           </Label>
+                           <Label>
+                              Floor 15
+                           </Label>
+                           <Label>
+                              Floor 16
+                           </Label>
+                           <Label>
+                              Floor 17
+                           </Label>
+                           <Label>
+                              Floor 18
+                           </Label>
+                           <Label>
+                              Floor 19
+                           </Label>
+                           <Label>
+                              Floor 20
+                           </Label>
+                        </FXCollections>
+                     </items>
+                  </JFXComboBox>
+               </control>
+
+            </ValidationFacade>
+         </VBox>
+      </HBox>
+
+   </StackPane>
+
+   <JFXButton fx:id="display1" prefWidth="60" prefHeight="30" buttonType="FLAT" text="1" GridPane.columnIndex="1" GridPane.rowIndex="7"
+              style="-fx-font-size:14px;"/>
+   <JFXButton fx:id="display2" prefWidth="60" prefHeight="30" buttonType="FLAT" text="1" GridPane.columnIndex="2" GridPane.rowIndex="7"
+              style="-fx-font-size:14px;"/>
+   <JFXButton fx:id="display3" prefWidth="60" prefHeight="30" buttonType="FLAT" text="1" GridPane.columnIndex="3" GridPane.rowIndex="7"
+              style="-fx-font-size:14px;"/>
+   <JFXButton fx:id="display4" prefWidth="60" prefHeight="30" buttonType="FLAT" text="1" GridPane.columnIndex="4" GridPane.rowIndex="7"
+              style="-fx-font-size:14px;"/>
+   <JFXButton fx:id="display5" prefWidth="60" prefHeight="30" buttonType="FLAT" text="1" GridPane.columnIndex="5" GridPane.rowIndex="7"
+              style="-fx-font-size:14px;"/>
+   <JFXButton fx:id="up1" prefWidth="60" prefHeight="30" buttonType="RAISED" text="↑" GridPane.columnIndex="1" GridPane.rowIndex="8"
+              style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:14px;"/>
+   <JFXButton fx:id="up2" prefWidth="60" prefHeight="30" buttonType="RAISED" text="↑" GridPane.columnIndex="2" GridPane.rowIndex="8"
+              style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:14px;"/>
+   <JFXButton fx:id="up3" prefWidth="60" prefHeight="30" buttonType="RAISED" text="↑" GridPane.columnIndex="3" GridPane.rowIndex="8"
+              style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:14px;"/>
+   <JFXButton fx:id="up4" prefWidth="60" prefHeight="30" buttonType="RAISED" text="↑" GridPane.columnIndex="4" GridPane.rowIndex="8"
+              style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:14px;"/>
+   <JFXButton fx:id="up5" prefWidth="60" prefHeight="30" buttonType="RAISED" text="↑" GridPane.columnIndex="5" GridPane.rowIndex="8"
+              style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:14px;"/>
+   <JFXButton fx:id="down1" prefWidth="60" prefHeight="30" buttonType="RAISED" text="↓" GridPane.columnIndex="1" GridPane.rowIndex="9"
+              style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:14px;"/>
+   <JFXButton fx:id="down2" prefWidth="60" prefHeight="30" buttonType="RAISED" text="↓" GridPane.columnIndex="2" GridPane.rowIndex="9"
+              style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:14px;"/>
+   <JFXButton fx:id="down3" prefWidth="60" prefHeight="30" buttonType="RAISED" text="↓" GridPane.columnIndex="3" GridPane.rowIndex="9"
+              style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:14px;"/>
+   <JFXButton fx:id="down4" prefWidth="60" prefHeight="30" buttonType="RAISED" text="↓" GridPane.columnIndex="4" GridPane.rowIndex="9"
+              style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:14px;"/>
+   <JFXButton fx:id="down5" prefWidth="60" prefHeight="30" buttonType="RAISED" text="↓" GridPane.columnIndex="5" GridPane.rowIndex="9"
+              style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:14px;"/>
+<rowConstraints>
+   <RowConstraints minHeight="10.0" prefHeight="40.0"  />
+
+</rowConstraints>
+<columnConstraints>
+
+   <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+
+</columnConstraints>
+</GridPane>
+
+
+
+
