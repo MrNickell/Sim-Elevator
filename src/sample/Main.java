@@ -18,6 +18,7 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         JFXButton button = (JFXButton) root.lookup("#floor20");
 
+
         for(int i = 0; i < 5; i++) {
             elevators[i] = new Elevator(root,i+1);
             elevators[i].start();
@@ -25,6 +26,10 @@ public class Main extends Application {
 
         Controller controller = new Controller();
         controller.init(root,elevators);
+        for(int i = 0; i < 5; i++) {
+            elevators[i].setController(controller);
+        }
+
 
 
 

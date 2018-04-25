@@ -15,6 +15,7 @@ public class Elevator extends Thread{
     int curFloor = 0;        //目前所在的楼层
     int currentElevator=1;
     int[] currentButtons = new int[20];  //目前电梯内部Button的状态
+    Controller controller;
 
     Parent root;
     Status status;
@@ -22,6 +23,7 @@ public class Elevator extends Thread{
     JFXComboBox elevatorSelector;
     JFXButton[] floorButtons = new JFXButton[20];
     JFXButton displayButton;
+
 
     PriorityQueue<Integer> destnationDown;
     PriorityQueue<Integer> destnationUp;
@@ -118,11 +120,11 @@ public class Elevator extends Thread{
                     if(currentElevator == index){
                     floorButtons[temp]
                             .setStyle("-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:10px;");
-
                     }
-                    displayButton.setText("Open");
+                    displayButton.setText((curFloor + 1)+"Open");
                 }
             });
+            controller.setUpButtons(curFloor);
             try {
                 Thread.sleep(3000);
             }catch (InterruptedException e){}
@@ -164,20 +166,23 @@ public class Elevator extends Thread{
         }else if(destnationDown.peek() == curFloor){
             int temp = destnationDown.peek();
 
-            if(currentElevator == index) {
-                Platform.runLater(new Runnable() {
-                    @Override
-                    public void run() {
-                        displayButton.setText(""+(curFloor + 1));
-                        floorButtons[temp].setStyle("-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:10px;");
-                        displayButton.setText("Open");
+            Platform.runLater(new Runnable() {
+                @Override
+                public void run() {
+                    displayButton.setText(""+(curFloor + 1));
+                    if(currentElevator == index){
+                        floorButtons[temp]
+                                .setStyle("-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:10px;");
                     }
-                });
-                try {
-                    Thread.sleep(3000);
-                }catch (InterruptedException e){}
+                    displayButton.setText((curFloor + 1)+"Open");
+                }
+            });
+            controller.setDownButtons(curFloor);
+            try {
+                Thread.sleep(3000);
+            }catch (InterruptedException e){}
 
-            }
+
 
             currentButtons[destnationDown.peek()] = 0;
             destnationDown.poll();
@@ -206,8 +211,7 @@ public class Elevator extends Thread{
             if(!destnationUp.contains(floorIndex))
                 destnationUp.add(floorIndex);
         }else {
-            if(!destnationDown.contains(floorIndex))
-                System.out.println("2333333333333333333");
+            if(!destnationDown.contains(floorIndex) && floorIndex != curFloor)
                 destnationDown.add(floorIndex);
         }
 
@@ -238,8 +242,11 @@ public class Elevator extends Thread{
                 destnationUp.add(buttonIndex);
         else
             if(!destnationDown.contains(buttonIndex))
-                System.out.println("24444444444444");
                 destnationDown.add(buttonIndex);
+    }
+
+    public void setController(Controller controller){
+        this.controller = controller;
     }
 
 

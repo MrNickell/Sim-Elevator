@@ -8,7 +8,6 @@ import javafx.scene.Parent;
 public class Controller {
     JFXButton[] upButtons = new JFXButton[5];
     JFXButton[] downButtons = new JFXButton[5];
-    JFXButton[] displayButtons = new JFXButton[5];
     JFXButton[] floorButtons = new JFXButton[20];
     JFXComboBox elevatorSelector;
     JFXComboBox floorSelector;
@@ -145,10 +144,7 @@ public class Controller {
                 score[i] = -1;
                 System.out.println("score"+i+":"+score[i]);
             }
-            if(buttonType == 1){
-                System.out.println("dddddddddddddddddddddd");
 
-            }
         }
 
         int tempi = 0;
@@ -166,6 +162,17 @@ public class Controller {
             elevatorPos[i] = elevators[i].getCurFloor();
         }
     }
+    public void setUpButtons(int floorIndex){
+            flrButState[floorIndex][0] = 0;
+            for(int i =0; i< 5;i++)
+                upButtons[i].setStyle("-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:14px;");
+
+    }
+    public void setDownButtons(int floorIndex){
+        flrButState[floorIndex][1] = 0;
+        for(int i =0; i< 5;i++)
+            downButtons[i].setStyle("-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:14px;");
+    }
 
 
-}
+} 

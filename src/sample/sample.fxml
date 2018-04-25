@@ -175,15 +175,15 @@
    </StackPane>
 
    <JFXButton fx:id="display1" prefWidth="60" prefHeight="30" buttonType="FLAT" text="1" GridPane.columnIndex="1" GridPane.rowIndex="7"
-              style="-fx-font-size:14px;"/>
+              style="-fx-font-size:12px;"/>
    <JFXButton fx:id="display2" prefWidth="60" prefHeight="30" buttonType="FLAT" text="1" GridPane.columnIndex="2" GridPane.rowIndex="7"
-              style="-fx-font-size:14px;"/>
+              style="-fx-font-size:12px;"/>
    <JFXButton fx:id="display3" prefWidth="60" prefHeight="30" buttonType="FLAT" text="1" GridPane.columnIndex="3" GridPane.rowIndex="7"
-              style="-fx-font-size:14px;"/>
+              style="-fx-font-size:12px;"/>
    <JFXButton fx:id="display4" prefWidth="60" prefHeight="30" buttonType="FLAT" text="1" GridPane.columnIndex="4" GridPane.rowIndex="7"
-              style="-fx-font-size:14px;"/>
+              style="-fx-font-size:12px;"/>
    <JFXButton fx:id="display5" prefWidth="60" prefHeight="30" buttonType="FLAT" text="1" GridPane.columnIndex="5" GridPane.rowIndex="7"
-              style="-fx-font-size:14px;"/>
+              style="-fx-font-size:12px;"/>
    <JFXButton fx:id="up1" prefWidth="60" prefHeight="30" buttonType="RAISED" text="↑" GridPane.columnIndex="1" GridPane.rowIndex="8"
               style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:14px;"/>
    <JFXButton fx:id="up2" prefWidth="60" prefHeight="30" buttonType="RAISED" text="↑" GridPane.columnIndex="2" GridPane.rowIndex="8"
